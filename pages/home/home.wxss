@@ -1,0 +1,84 @@
+.swiper-container {
+    width: 100%;
+    padding: 0;
+}
+.activity-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+
+.activity-item {
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+}
+
+.activity-item image {
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    margin: 0 auto;
+    margin-top: 25rpx;
+    border-radius: 50%
+}
+
+.activity-item label {
+    line-height: 80rpx;
+    font-size: 30rpx
+}
+
+.feature-list {
+    flex-direction: row;
+}
+
+.feature-title image {
+    margin-right: 20rpx;
+    height: 50rpx;
+    width: 60rpx;
+    padding: 30rpx;
+}
+
+.feature-title text {
+    font-weight: normal;
+    font-size: 30rpx;
+    top: -40rpx;
+    position: relative;
+}
+
+.feature {
+    flex-direction: row;
+    width: 720rpx;
+    height: 420rpx;
+    margin: auto;
+    padding: 15rpx;
+    position: relative;
+}
+
+.feature image {
+    width: 700rpx;
+    height: 300rpx;
+    margin-left: 10rpx;
+    position: relative;
+}
+
+.feature .title {
+    display: block;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    word-break: keep-all;/* 不换行 */
+    white-space: nowrap;/* 不换行 */
+    overflow: hidden;/*内容超出宽度时隐藏超出部分的内容*/
+    text-overflow: ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.sold-out-price {
+    color: brown
+}
+
+.price {
+    position: absolute;
+    right: 50rpx;
+    font-size: 40rpx
+}

@@ -1,0 +1,36 @@
+<scroll-view class="page" scroll-y="{{true}}">
+    <view class="section swiper-container">
+        <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" bindchange="currentChange">
+            <block wx:for="{{product.picture}}">
+                <swiper-item>
+                    <image class="swiper-image" mode="aspectFill" src="{{item}}" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <text class="index-con">{{current}} / {{product.picture.length}}</text>
+    </view>
+    <view class="product-detail">
+        <view class="product product-name">{{product.goods_name}}</view>
+        <view class="product product-price">￥ {{product.goods_price}}</view>
+        <view class=" product-market">
+            <text>市场价：¥ {{product.market_price}}</text>
+            <text class="product-sold">已售{{product.sold_count}}件</text>
+        </view>
+    </view>
+    <view class="product-video">
+        <video controls="{{true}}" autoplay="{{true}}" src="{{product.video_url}}" />
+    </view>
+    <view class="product-recommend">
+                <view wx:for="{{wxParseData}}" wx:for-item="activity">
+            <view wx:for="{{activity.child}}" wx:for-item="act">
+                <view wx:if="{{activity.tag == 'p'}}">{{act.text}}</view>
+                <view class="con-text-center" wx:if="{{act.tag == 'img' || act.tag == 'gif'}}">
+                    <image src="{{act.attr.src}}" mode="aspectFit"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <zan-button>赞button</zan-button>
+    <zan-button type="primary">确认付款</zan-button>
+    <zan-icon type="success"></zan-icon>
+</scroll-view>

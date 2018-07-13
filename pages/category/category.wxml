@@ -1,0 +1,7 @@
+<scroll-view class="page" scroll-y="{{true}}">
+    <view class="category-list">
+        <!-- <swiper class= "" autoplay="{{true}}">
+            <block wx:for="{{}}"></block>
+        </swiper> -->
+    </view>
+</scroll-view>

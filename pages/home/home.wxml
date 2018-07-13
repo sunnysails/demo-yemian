@@ -1,0 +1,37 @@
+<scroll-view class="page" scroll-y="{{true}}">
+  <view class="section swiper-container">
+    <swiper class="" autoplay="{{true}}" interval="4000" indicator-dots="{{true}}">
+      <block wx:for="{{banners}}" wx:for-item="banner">
+        <swiper-item>
+          <image mode="aspectFill" src="{{banner.image_src}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="section activity-list">
+    <view class="activity-item" wx:for="{{activities}}" wx:for-item="activitiy">
+      <image mode="aspectFill" src="{{activitiy.image_src}}" />
+      <label>{{activitiy.title}}</label>
+    </view>
+  </view>
+  <view class="section feature-list">
+    <view class="feature-title">
+      <icon>
+        <image mode="aspectFill" src="./images/feature.png" />
+      </icon>
+      <text>{{shop_info.index_recommend_title}}</text>
+    </view>
+    <view class="feature" wx:for="{{features}}" wx:for-item="feature">
+      <image mode="aspectFill" src="{{feature.image_url}}" />
+      <view>
+        <label class="title">{{feature.goods_name}}</label>
+      </view>
+      <block wx:if="{{feature.is_sold_out}}">
+        <label class="price sold-out-price">￥ {{feature.goods_price}} 已售罄</label>
+      </block>
+      <block wx:else>
+        <label class="price sold-price">￥ {{feature.goods_price}}</label>
+      </block>
+    </view>
+  </view>
+</scroll-view>
