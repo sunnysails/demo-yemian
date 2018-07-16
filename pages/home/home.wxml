@@ -17,7 +17,7 @@
   <view class="section feature-list">
     <view class="feature-title">
       <icon>
-        <image mode="aspectFill" src="./images/feature.png" />
+        <image mode="aspectFill" src="../images/feature.png" />
       </icon>
       <text>{{shop_info.index_recommend_title}}</text>
     </view>

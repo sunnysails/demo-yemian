@@ -220,7 +220,7 @@ var productData = {
         "http://img13.360buyimg.com/n1/jfs/t3988/154/78996704/392074/4a9edd9f/583b993cN1f0f62d1.jpg",
         "http://img13.360buyimg.com/n1/jfs/t3370/315/1984719501/142392/2f47d380/583b993cN67ee086a.jpg",
     ],
-    video_url: "https://v.qq.com/x/page/p0560uace9i.html",
+    video_url: "http://video.chuangkr.china.com.cn/201807/15140250/l3uujfcxq7o2hp1q_fmp4_vb1152.mp4",
     goods_price: 0.01,
     cost_price: 12,
     market_price: 34,
